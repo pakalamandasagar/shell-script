@@ -2,6 +2,8 @@
 
 ID=$(id -u)
 
+echo "script name: $0"
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
@@ -27,5 +29,4 @@ VALIDATE $? "Installing MySQL"
 yum instal git -y
 
 VALIDATE $? "Installing GIT"
-
 
